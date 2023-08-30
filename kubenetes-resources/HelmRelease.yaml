@@ -12,5 +12,5 @@ spec:
         kind: GitRepository
         name: helmpod     # Name of the GitRepository resource
         namespace: flux-system  # Namespace where the GitRepository is located
-    values:
+       values:
         replicaCount: 3
