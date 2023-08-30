@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: helmpods
+  namespace: flux-system
+spec:
+  url: https://github.com/venkallex/new-repo.git
+  interval: 2m                                  
+  secretRef:
+    name: github-auth
