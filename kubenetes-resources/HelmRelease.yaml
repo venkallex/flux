@@ -1,13 +1,13 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: fluxpod
+  name: helmpod
   namespace: flux-system
 spec:
   interval: 1m
   chart:
     spec:
-      chart: https://github.com/venkallex/flux/edit/main/kubenetes-resources/HelmRelease.yaml
+      chart: ./
       sourceRef:
         kind: GitRepository
         name: helmpod     # Name of the GitRepository resource
