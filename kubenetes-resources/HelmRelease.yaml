@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: https://github.com/venkallex/flux/blob/main/kubenetes-resources/Chart.yaml
+      chart: https://github.com/venkallex/flux/edit/main/kubenetes-resources/HelmRelease.yaml
       sourceRef:
         kind: GitRepository
         name: helmpod     # Name of the GitRepository resource
