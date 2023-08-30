@@ -6,5 +6,3 @@ metadata:
 spec:
   url: https://github.com/venkallex/flux/blob/main/kubenetes-resources/Chart.yaml
   interval: 2m                                  
-  secretRef:
-    name: github-auth
