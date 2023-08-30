@@ -4,13 +4,15 @@ metadata:
   name: helmpod
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 5m
   chart:
     spec:
       chart: ./
+      version: '4.0'
       sourceRef:
         kind: GitRepository
-        name: helmpod     # Name of the GitRepository resource
-        namespace: flux-system  # Namespace where the GitRepository is located
-       values:
-        replicaCount: 3
+        name: helmpod
+        namespace: flux-system
+      interval: 1m
+  values:
+    replicaCount: 2
