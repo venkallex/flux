@@ -1,8 +1,11 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: helmpods
+  name: helmpod
   namespace: flux-system
 spec:
-  url: https://github.com/venkallex/flux/blob/main/kubenetes-resources/Chart.yaml
-  interval: 2m                                  
+  interval: 1m
+  url: https://github.com/venkallex/flux.git
+  ref:
+    branch: main
+                         
